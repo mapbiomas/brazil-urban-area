@@ -31,12 +31,8 @@ _Topics covered in this git_
 |Topic| Description (if not included, why?)
 |:---|:---
 ✅ Satellite imagery| Includes all codes to obtain a complete mosaic with all bands used during the classification
-❌ Spatial scope delineation| Refers merely to the limits of the classification and to definition of search area (defined as broad areas where urban classification was conducted). This limits were built using QGIS and official datasets and can vary greatly for other regions. Its importance rely both on avoid computational efforts and control the urban occurrence. Here, we limit to provide the assets (feature collection) of the spatial scope.
-❌ Sample collection creation| The creation of classification samples is step-by-step explained within the ATBD and involves the use OpenStreetMap (OSM) features operated within QGIS. Here, we provide the assets of samples.
 ✅ Classification algorithm| Includes all codes applied for urban mapping within Google Earth Engine based on Random Forest (RF) algorithm. 
 ✅ Post-processing steps| Includes post-classification codes applied for urban areas refinement. 
-❌ Comparison with previous collection| This step is presented only in the ATBD once it is a evaluation of the compared results with previous collections.
-❌ Comparison with reference maps| This step is presented only in the ATBD once it is a evaluation of the compared results with reference maps.
 <br/>
 
 ## Satellite imagery
