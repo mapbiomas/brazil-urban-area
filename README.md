@@ -17,7 +17,7 @@ Developed by MapBiomas Urban Areas Mapping Group, composed by students and resea
 - UFBA <br/>
 
 # About
-This documentation contains general information about the urban areas mapping procedures developed by MapBiomas project in Collection 10 products. Both the concepts that were applied and the main accuracy results are detailed in the Algorithm Theoretical Basis Document (ATBD) about urban areas (see https://mapbiomas.org/). Here we highlight the sequential procedures to classify urban areas from satellite imagery and reference base-maps.<br/>
+This documentation provides general information on the urban area mapping procedures developed by the MapBiomas Project for Collection 10 products. The applied concepts and the main accuracy results are presented in the Algorithm Theoretical Basis Document (ATBD) for urban areas (see https://mapbiomas.org/). Here we highlight the sequential procedures to map urban areas based on satellite imagery and reference base-maps.<br/>
 
 # How to use
 ## Basics
@@ -89,7 +89,7 @@ _Codes used for applying the probability threshold and filters (temporal and spa
 _Steps necessary to conduct the urban areas classification_
 
 1) In your GEE repository, create a folder where you will save the codes
-2) After creating a file for each one of the GEE codes above mentioned, adequate all the repository address to your folder
+2) After creating a file for each one of the GEE codes above mentioned, adequate all the repository address to your folders
 3) The sequence of codes are:\
 -> **classification_batch.js** \
 -> **temporalStabilizationByRegion.js**\
