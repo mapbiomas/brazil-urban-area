@@ -77,6 +77,8 @@ _Ancillary datasets created to mask areas where urbanization can be detected (sp
 **[buildingsAndBuffers.js](codes/buildingsAndBuffers.js)**| Code necessary to create a raster from which buildings and their surroundings are considered to mask the occurrence of urban areas.
 **[referenceLayers.js](codes/referenceLayers.js)**| Code necessary to create a raster from which reference datasets are prepared to compose the spatial mask of occurrence of urban areas. Examples of data are census tracts, roads and infrastructures, and slums.
 
+<br>
+
 _Codes used for applying the probability threshold and filters (temporal and spatial) for refinement of the results_
 |Codes| Description
 |:---|:---
