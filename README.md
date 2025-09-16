@@ -74,14 +74,13 @@ _Codes necessary for calculating the best threshold for urban areas binary class
 _Ancillary datasets created to mask areas where urbanization can be detected (spatial filter mask)_
 |Codes| Description
 |:---|:---
-**buildingsAndBuffers**| Code necessary to create a raster from which buildings and their surroundings are considered to mask the occurrence of urban areas.
-**referenceLayers**| Code necessary to create a raster from which reference datasets are prepared to compose the spatial mask of occurrence of urban areas. Examples of data are census tracts, roads and infrastructures, and slums.
+**[buildingsAndBuffers.js](buildingsAndBuffers.js)**| Code necessary to create a raster from which buildings and their surroundings are considered to mask the occurrence of urban areas.
+**[referenceLayers.js](referenceLayers.js)**| Code necessary to create a raster from which reference datasets are prepared to compose the spatial mask of occurrence of urban areas. Examples of data are census tracts, roads and infrastructures, and slums.
 
 _Codes used for applying the probability threshold and filters (temporal and spatial) for refinement of the results_
 |Codes| Description
 |:---|:---
-**gettingTemporalBreakPoints**| Code necessary to obtain breakpoints from which urban classification frequency after a year under analysis is greater than non-urban classification frequency. This code enables an analysis of "when" a pixel becomes urban throughout the time series.
-**posProcessingFilter**| Code necessary to apply the selected probability threshold and provide temporal consistency throughout the time series based on breakpoint analysis and limit the occurrence of urban areas within spatial masks (temporal filter + spatial filter).
+**[posProcessingFilter.js](posProcessingFilter.js)**| Code necessary to provide spatial and temporal consistency. The code operates several steps: <br> - Obtain breakpoints from which urban classification frequency after a year under analysis is greater than non-urban classification frequency. This code enables an analysis of "when" a pixel becomes urban throughout the time series. <br> - Apply the selected probability threshold and provide temporal consistency throughout the time series based on breakpoint analysis and limit the occurrence of urban areas within spatial masks (temporal filter + spatial filter).
 <br/>
 
 # Processing steps
@@ -95,5 +94,6 @@ _Steps necessary to conduct the urban areas classification_
 -> **bestProb_preProcessingByGridByYear.js**\
 -> **preProcessingThreshold.ipynb**\
 -> **meanThresholdsByGridAsImage.js**\
--> **gettingTemporalBreakPoints**\
--> **posProcessingFilter**\
+-> **buildingsAndBuffers**\
+-> **referenceLayers**\
+-> **posProcessingFilter**
