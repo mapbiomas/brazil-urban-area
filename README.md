@@ -57,7 +57,7 @@ _Codes necessary for conducting the classification._
 |:---|:---
 **[class_lib.js](codes/class_lib.js)** | Sets up a classification procedure using Random Forest (RF) algorithm.
 **[classification_batch.js](codes/classification_batch.js)** | Perform the classification using mosaics, samples, and the classifier. The classification is performed annually based on a regular grid. The result is a probability layer. 
-**[temporalStabilizationByRegion.js](codes/temporalStabilizationByRegion.js)** | After producing the classification (as a probability layer) by year and grid unit, a temporal harmonization is applied. This is a simply calculation of the mean probability considering a range of five years for each year.
+**[temporalStabByRegion.js](codes/temporalStabByRegion.js)** | After producing the classification (as a probability layer) by year and grid unit, a temporal harmonization is applied. This is a simply calculation of the mean probability considering a range of five years for each year.
 **[bestProb_preProcessingByGridByYear.js](codes/bestProb_preProcessingByGridByYear.js)** | Using the probability harmonized layer, this code prepares the necessary files to estimate the best probability threshold to be used as a cut-off value for binary classification of urban areas. The result is processed by grid and year and analyzed externally. 
 **[meanThresholdsByGridAsImage.js](codes/meanThresholdsByGridAsImage.js)** | After calculating the best threshold externally (see [Urban classification threshold analysis using python](#Urban-classification-threshold-analysis-using-python)), an image with best selected threshold is produced to be used as a mask value by grid.
 <br/>
