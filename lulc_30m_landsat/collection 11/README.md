@@ -5,7 +5,7 @@
 Developed by MapBiomas Urban Areas Mapping team, composed by students and researchers from USP, including the NEPA (laboratory from EESC/USP) and UFSCar.
 
 # About
-This documentation provides general information on the urban area mapping procedures developed by the MapBiomas Project for Collection 10 products. The applied concepts and the main accuracy results are presented in the Algorithm Theoretical Basis Document (ATBD) for urban areas (see https://mapbiomas.org/). Here we highlight the sequential procedures to map urban areas based on satellite imagery and reference base-maps.<br/>
+This documentation provides general information on the urban area mapping procedures developed by the MapBiomas Project for Collection 10 products. The applied concepts and the main accuracy results are presented in the Algorithm Theoretical Basis Document (ATBD) for urban areas (see [mapbiomas.org](https://mapbiomas.org/)). Here we highlight the sequential procedures to map urban areas based on satellite imagery and reference base-maps.<br/>
 
 # How to use
 ## Basics
@@ -31,7 +31,7 @@ _Codes necessary to support the classification and access previous results._
 |Codes| Description
 |:---|:---
 **[listsAndDicts.js](codes/mb_batch/listsAndDicts.js)**| Code with lists and dictionaries involving time ranges, class values, and classification grid. 
-**[collections.js](codes/mb_batch/collections.js)**| Code with information to access previous collections of urban areas mapping results. This code is necessary to get samples in the nexts steps. 
+**[collections.js](codes/mb_batch/collections.js)**| Code with information to access previous collections of urban areas mapping results. This code is necessary to get samples in the next steps. 
 
 <br/>
 
@@ -40,7 +40,7 @@ _Codes necessary for satellite imagery._
 
 |Codes| Description
 |:---|:---
-**[stablesSamples.js](codes/stablesSamples.js)**| Code used to generate stable samples based on stable areas over diferent ranges of time starting in 1985.
+**[stableSamples.js](codes/stableSamples.js)**| Code used to generate stable samples based on stable areas over different ranges of time starting in 1985.
 **[preProcessing_lib.js](codes/preProcessing_lib.js)**| Code with functions to scale Landsat images, remove clouds and shadow clouds.
 **[renameBands.js](codes/renameBands.js)** | Code with dictionaries and functions useful for adequate Landsat band names (including all Landsat missions).
 **[index_lib.js](codes/index_lib.js)** | Library with index calculation functions used during the mosaic production.
@@ -98,13 +98,13 @@ _Codes necessary to get urban vegetation (within urban areas)._
 
 <br>
 
-# Post-processing steps
-_Steps necessary to conduct the urban areas classification_
+# Step-by-step execution workflow
+_Sequence to run the codes for urban areas classification_
 
 1) In your GEE repository, create a folder where you will save the codes
 2) After creating a file for each one of the GEE codes above mentioned, adequate all the repository address to your folders
 3) The sequence of codes are:\
--> **stablesSamples.js**\
+-> **stableSamples.js**\
 -> **classification_batch.js** \
 -> **bestProb_preProcessingByGridByYear.js**\
 -> **preProcessingThreshold.ipynb**\
