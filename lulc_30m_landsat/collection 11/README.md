@@ -5,7 +5,7 @@
 Developed by MapBiomas Urban Areas Mapping team, composed by students and researchers from USP, including the NEPA (laboratory from EESC/USP) and UFSCar.
 
 # About
-This documentation provides general information on the urban area mapping procedures developed by the MapBiomas Project for Collection 10 products. The applied concepts and the main accuracy results are presented in the Algorithm Theoretical Basis Document (ATBD) for urban areas (see [mapbiomas.org](https://mapbiomas.org/)). Here we highlight the sequential procedures to map urban areas based on satellite imagery and reference base-maps.<br/>
+This documentation provides general information on the urban area mapping procedures developed by the MapBiomas Project for Collection 11 products. The applied concepts and the main accuracy results are presented in the Algorithm Theoretical Basis Document (ATBD) for urban areas (see [mapbiomas.org](https://mapbiomas.org/)). Here we highlight the sequential procedures to map urban areas based on satellite imagery and reference base-maps.<br/>
 
 # How to use
 ## Basics
